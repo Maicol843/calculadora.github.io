@@ -8,7 +8,54 @@
     <title>Calculadora</title>
 </head>
 <body>
-    
+    <!--Formulario-->
+    <form id="calculadora">
+        <!--Titulo-->
+        <h1>CALCULADORA</h1>
+        <!--Tabla-->
+        <table>
+            <!--Entrada-->
+            <tr>
+                <td colspan="4"><input type="text" readonly id="resultado"></td>
+            </tr>
+            <!--Botones de operaciones-->
+            <tr>
+                <td><button type="button" id="clear" class="operacion">C</button></td>
+                <td><button type="button" id="dividir" class="operacion">/</button></td>
+                <td><button type="button" id="multiplicar" class="operacion">X</button></td>
+                <td rowspan="2"><button type="button" id="restar" class="operacion">-</button></td>
+            </tr>
+            <!--Botones de los números-->
+            <tr>
+                <td><button type="button">1</button></td>
+                <td><button type="button">2</button></td>
+                <td><button type="button">3</button></td>
+            </tr>
+            <tr>
+                <td><button type="button">4</button></td>
+                <td><button type="button">5</button></td>
+                <td><button type="button">6</button></td>
+                <!--Botón suma-->
+                <td rowspan="2">
+                    <button type="button" id="sumar" class="operacion">+</button>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="button">7</button></td>
+                <td><button type="button">8</button></td>
+                <td><button type="button">9</button></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button">0</button>
+                </td>
+                <!--Botón igual-->
+                <td colspan="2">
+                    <button type="button" id="igual" class="operacion">=</button>
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 <!--JavaScript-->
 <script src="../js/index.js"></script>
